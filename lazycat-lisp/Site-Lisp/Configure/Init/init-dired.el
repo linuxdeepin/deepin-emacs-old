@@ -92,7 +92,7 @@
 (add-hook 'dired-after-readin-hook 'dired-sort-method) ;先显示目录, 然后显示文件
 (add-hook 'dired-mode-hook 'dired-omit-method)         ;隐藏文件的方法
 (setq dired-guess-shell-alist-user                     ;设置文件默认打开的模式
-      '(
+      (list
         ;; 图书
         (list "\\.chm$" '(concat
                           "firefox chm:"            ;执行特定的命令
